@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background-image: url(./assets/gravel.png);
+    background-position: center;
+    background-size: center;
+    /* padding: 100%; */
+    z-index: 0;
+}
+
+/* .home {
+  background-image: url(./assets/gravel.png);
+    
+} */

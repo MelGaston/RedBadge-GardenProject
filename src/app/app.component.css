@@ -1,0 +1,15 @@
+.homelogo {
+    inline-size: 8%;
+}
+
+a {
+    padding: 10px;
+}
+
+nav {
+    background-image: url(../assets/dark-wood.png);
+}
+/* 
+body {
+    background-image: url(../assets/gravel.png);
+} */

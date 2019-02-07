@@ -1,0 +1,67 @@
+.g {
+    inline-size: 75%;
+    border-radius: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;   
+}
+
+.gdiv {
+    background-color: grey;
+    width:30%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 100px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: palevioletred;
+}
+
+p {
+    display: block;
+    color: palevioletred;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-size: 30px;
+    padding: 25px;
+    text-align: center;
+}
+
+.textdiv {
+    background-color: grey;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 200px;
+
+}
+
+.form-group {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline;
+}
+.row {
+    margin: 25px 0;
+    display:block;
+    max-width: 1080px;
+}
+
+#email, #name {
+    display:inline-block;
+    width:48%;
+    margin-bottom: 2vh;
+}
+
+#name {
+    float: left;
+}
+
+#email {
+    float:right;
+}
