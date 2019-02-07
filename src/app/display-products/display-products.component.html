@@ -1,9 +1,11 @@
 <div class="deck">
   <div class="card">
-    <div class="cardContainer">
+    <div class="imgColumn">
       <img src="{{_product.product_image}}"/>
+    </div>
+    <div class="descColumn">
       <h2><em>{{ _product.product_name }}</em></h2>
-      <p>{{ _product.product_price }}</p>
+      <p>${{ _product.product_price }}</p>
     </div>
   </div>
 </div>
