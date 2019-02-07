@@ -1,0 +1,29 @@
+.deck {
+    display:inline-block;
+    margin:auto;
+}
+
+.card {
+    display:inline-block;
+    margin:1vh;
+    padding:2vh;
+    background-color: #efefef;
+    border-radius: 0.25em;
+    width:44vw;
+}
+
+.imgColumn {
+    width:25%;
+    float:left;
+}
+
+.imgColumn img {
+    max-width: 10vw;
+}
+
+.descColumn {
+    width:70%;
+    float:left;
+    margin-left:2vw;
+    font-family: Helvetica, sans-serif;
+}
