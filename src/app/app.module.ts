@@ -1,28 +1,33 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { AuthComponent } from './auth/auth.component';
 import { ProductsComponent } from './products/products.component';
 import { AboutComponent } from './about/about.component';
+import { DatabaseService } from './services/database.service';
 import { HomeComponent } from './home/home.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { DisplayProductsComponent } from './display-products/display-products.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     AuthComponent,
     ProductsComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    DisplayProductsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ DatabaseService, HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
