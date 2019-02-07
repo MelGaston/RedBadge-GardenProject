@@ -12,4 +12,9 @@ export class AuthComponent implements OnInit {
   ngOnInit() {
   }
 
+  postLogin(email: string, password: string): void{
+    event.preventDefault();
+    console.log("this works " + " " + email + " " + password)
+  }
+
 }
