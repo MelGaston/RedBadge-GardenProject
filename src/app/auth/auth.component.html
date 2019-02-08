@@ -1,9 +1,11 @@
-<h2>Login!</h2>
+<h1>Login</h1>
 
-<form (submit) = "postLogin(email.value, password.value); email.value = ''; false; password.value = ''">
-  <label>Email: </label>
-  <input placeholder = "JohnDoe@gmail.com" #email type = "text" />
-  <label>Password: </label>
-  <input #password type = "password" placeholder = "******" />
-  <button type = "submit">Submit</button>
-</form>
+<div class="container">
+  <form (submit) = "postLogin(email.value, password.value); email.value = ''; false; password.value = ''">
+    <label>Email: </label>
+    <input placeholder = "JohnDoe@gmail.com" #email type = "text" />
+    <label>Password: </label>
+    <input #password type = "password" placeholder = "******" />
+    <button type = "submit">Submit</button>
+  </form>
+</div>

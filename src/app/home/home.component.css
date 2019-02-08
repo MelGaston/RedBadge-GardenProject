@@ -20,6 +20,7 @@ p, li {
     margin:5vh auto;
     padding:5vh 2vw 5vh 5vw;
     background-color: rgba(255,255,255,0.85);
+    border-radius: 0.25em;
 }
 
 .text {
