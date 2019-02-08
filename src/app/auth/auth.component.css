@@ -9,7 +9,7 @@ h1 {
 }
 
 .container {
-    margin:auto;
+    margin:1vh auto 5vh;
     background-color: rgba(255,255,255,0.85);
     padding:2vh;
     text-align: center;
@@ -31,6 +31,7 @@ button {
     background-color: palevioletred;
     color:#ffffff;
     transition: 0.3s;
+    border:none;
 }
 
 button:hover {
