@@ -11,6 +11,7 @@ import { DatabaseService } from './services/database.service';
 import { HomeComponent } from './home/home.component';
 import { DisplayProductsComponent } from './display-products/display-products.component'
 import { ApiService } from './api.service';
+import {DisplayProductsComponent} from "./display-products/display-products.component"
 
 @NgModule({
   declarations: [
