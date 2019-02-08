@@ -8,11 +8,11 @@ import { Observable } from 'rxjs';
 })
 
 export class DatabaseService {
-  private productUrl = 'https://efa-gardenapp-backend.herokuapp.com/api/product/';
+  private productUrl = 'https://efa-gardenapp-backend.herokuapp.com/api';
 
   constructor(private http: HttpClient) { }
 
   getProducts(): Observable<Product[]> {
-    return this.http.get<Product[]>(this.productUrl)
+    return this.http.get<Product[]>(`${this.productUrl}/product`)
   }
 }
