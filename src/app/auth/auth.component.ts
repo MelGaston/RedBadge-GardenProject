@@ -20,11 +20,10 @@ export class AuthComponent implements OnInit {
     let userInfo = new User();
     userInfo.email = email;
     userInfo.password = password;
-    
+
     this.apiService.postLogin(userInfo)
     .subscribe(user => {
       this.users.push(user);
     })
   }
-
 }
