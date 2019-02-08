@@ -1,0 +1,17 @@
+.homelogo {
+    inline-size: 10%;
+}
+
+a {
+    padding: 10px;
+}
+
+nav {
+    background-color: #efefef;
+    background-image: url("https://www.transparenttextures.com/patterns/tileable-wood.png");
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.75);
+}
+
+.btn {
+    background-color: #fef200
+}

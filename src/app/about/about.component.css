@@ -1,0 +1,63 @@
+h1 {
+    padding: 25px;
+    margin: 25px;
+    text-align: center;
+    font-size: 50px;
+    color: palevioletred;
+    font-family: 'Bowlby One', cursive;
+    letter-spacing: 2px;
+}
+
+h2 {
+    padding: 25px;
+    margin: 50px 25px 25px;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Open Sans', sans-serif;
+    color:#ffffff;
+}
+
+.container {
+    margin:auto;
+    background-color: rgba(255,255,255,0.85);
+    padding:2vh;
+    border-radius: 0.25em;
+}
+
+.g {
+    width:35%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.textdiv {
+    width: 60%;
+    display: inline-block;
+    margin: 1vh 0 0 3vw;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25em;
+}
+
+.form-group {
+    display: inline;
+}
+
+.row {
+    margin: 25px auto;
+    display:block;
+    max-width: 1140px;
+}
+
+#email, #name {
+    display:inline-block;
+    width:48%;
+    margin-bottom: 2vh;
+}
+
+#name {
+    float: left;
+}
+
+#email {
+    float:right;
+}
