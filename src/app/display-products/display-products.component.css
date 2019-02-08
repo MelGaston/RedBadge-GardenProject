@@ -1,3 +1,12 @@
+h2, p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+p {
+    font-size: 1.25em;
+}
+
 .deck {
     display:inline-block;
     margin:auto;
@@ -7,7 +16,7 @@
     display:inline-block;
     margin:1vh;
     padding:2vh;
-    background-color: #efefef;
+    background-color: rgba(255,255,255,0.85);
     border-radius: 0.25em;
     width:44vw;
 }
@@ -25,5 +34,4 @@
     width:70%;
     float:left;
     margin-left:2vw;
-    font-family: Helvetica, sans-serif;
 }

@@ -1,0 +1,14 @@
+h1 {
+    padding: 25px;
+    margin: 25px;
+    text-align: center;
+    font-size: 50px;
+    color: palevioletred;
+    font-family: 'Bowlby One', cursive;
+    letter-spacing: 2px;
+}
+
+div {
+    margin:auto;
+    text-align: center;
+}

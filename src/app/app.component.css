@@ -1,5 +1,5 @@
 .homelogo {
-    inline-size: 8%;
+    inline-size: 10%;
 }
 
 a {
@@ -7,9 +7,11 @@ a {
 }
 
 nav {
-    background-image: url(../assets/dark-wood.png);
+    background-color: #efefef;
+    background-image: url("https://www.transparenttextures.com/patterns/tileable-wood.png");
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.75);
 }
-/* 
-body {
-    background-image: url(../assets/gravel.png);
-} */
+
+.btn {
+    background-color: #fef200
+}

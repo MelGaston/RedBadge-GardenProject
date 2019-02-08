@@ -1,55 +1,50 @@
-.g {
-    inline-size: 75%;
-    border-radius: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;   
-}
-
-.gdiv {
-    background-color: grey;
-    width:30%;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 100px;
-}
-
 h1 {
+    padding: 25px;
+    margin: 25px;
     text-align: center;
     font-size: 50px;
     color: palevioletred;
+    font-family: 'Bowlby One', cursive;
+    letter-spacing: 2px;
 }
 
-p {
-    display: block;
-    color: palevioletred;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    font-size: 30px;
+h2 {
     padding: 25px;
+    margin: 50px 25px 25px;
     text-align: center;
+    font-size: 36px;
+    font-family: 'Open Sans', sans-serif;
+    color:#ffffff;
+}
+
+.container {
+    margin:auto;
+    background-color: rgba(255,255,255,0.85);
+    padding:2vh;
+}
+
+.g {
+    width:35%;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .textdiv {
-    background-color: grey;
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 200px;
-
+    width: 60%;
+    display: inline-block;
+    margin: 1vh 0 0 3vw;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25em;
 }
 
 .form-group {
-    margin-left: auto;
-    margin-right: auto;
     display: inline;
 }
+
 .row {
-    margin: 25px 0;
+    margin: 25px auto;
     display:block;
-    max-width: 1080px;
+    max-width: 1140px;
 }
 
 #email, #name {

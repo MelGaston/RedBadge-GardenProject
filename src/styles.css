@@ -1,14 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-    background-image: url(./assets/gravel.png);
-    background-position: center;
-    background-size: center;
-    /* padding: 100%; */
-    z-index: 0;
+  background-image: url("https://images.unsplash.com/photo-1535242208474-9a2793260ca8");
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* .home {
-  background-image: url(./assets/gravel.png);
-    
-} */
