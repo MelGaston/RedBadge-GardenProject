@@ -13,5 +13,11 @@ nav {
 }
 
 .btn {
-    background-color: #fef200
+    background-color: #fef200;
+    transition:0.3s;
+}
+
+.btn:hover {
+    background-color: #fedd00;
+    transition:0.3s;
 }
