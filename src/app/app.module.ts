@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule, HttpClient } from "@angular/common/http"
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthComponent } from './auth/auth.component';
@@ -8,8 +9,7 @@ import { ProductsComponent } from './products/products.component';
 import { AboutComponent } from './about/about.component';
 import { DatabaseService } from './services/database.service';
 import { HomeComponent } from './home/home.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { DisplayProductsComponent } from './display-products/display-products.component';
+import { ApiService } from './api.service';
 
 @NgModule({
   declarations: [
@@ -23,11 +23,9 @@ import { DisplayProductsComponent } from './display-products/display-products.co
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    FormsModule,
-    ReactiveFormsModule
+    HttpClientModule
   ],
-  providers: [ DatabaseService, HttpClient],
+  providers: [ HttpClient, ApiService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

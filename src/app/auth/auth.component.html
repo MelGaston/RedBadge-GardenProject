@@ -1,7 +1,7 @@
 <h1>Login</h1>
 
-<div class="container">
-  <form (submit) = "postLogin(email.value, password.value); email.value = ''; false; password.value = ''">
+<div class = "container">
+  <form id = "loginForm" (submit) = "postLogin(email.value, password.value); email.value = ''; false; password.value = ''">
     <label>Email: </label>
     <input placeholder = "JohnDoe@gmail.com" #email type = "text" />
     <label>Password: </label>
@@ -9,3 +9,10 @@
     <button type = "submit">Submit</button>
   </form>
 </div>
+
+<form id = "deleteProducts" (submit) = "deleteProducts(productId.value)">
+  <h3>Which products do you want to delete?</h3>
+  <label>Id #:</label>
+  <input #productId type = "text" placeholder = "999" />
+  <button type = "submit" style = "background-color: red; color: white;">Submit</button>
+</form>
