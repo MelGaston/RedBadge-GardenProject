@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {ApiService} from "../api.service";
+
+import {User} from "../user";
 
 @Component({
   selector: 'app-auth',
@@ -6,15 +9,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./auth.component.css']
 })
 export class AuthComponent implements OnInit {
-
-  constructor() { }
+  users: User[];
+  constructor(private apiService: ApiService) { }
 
   ngOnInit() {
   }
 
   postLogin(email: string, password: string): void{
     event.preventDefault();
-    console.log("this works " + " " + email + " " + password)
+    let userInfo = new User();
+    userInfo.email = email;
+    userInfo.password = password;
+    
+    this.apiService.postLogin(userInfo)
+    .subscribe(user => {
+      this.users.push(user);
+    })
   }
 
 }

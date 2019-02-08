@@ -1,9 +1,16 @@
 <h2>Login!</h2>
 
-<form (submit) = "postLogin(email.value, password.value); email.value = ''; false; password.value = ''">
+<form id = "loginForm" (submit) = "postLogin(email.value, password.value); email.value = ''; false; password.value = ''">
   <label>Email: </label>
   <input placeholder = "JohnDoe@gmail.com" #email type = "text" />
   <label>Password: </label>
   <input #password type = "password" placeholder = "******" />
   <button type = "submit">Submit</button>
+</form>
+
+<form id = "deleteProducts" (submit) = "deleteProducts(productId.value)">
+  <h3>Which products do you want to delete?</h3>
+  <label>Id #:</label>
+  <input #productId type = "text" placeholder = "999" />
+  <button type = "submit" style = "background-color: red; color: white;">Submit</button>
 </form>
