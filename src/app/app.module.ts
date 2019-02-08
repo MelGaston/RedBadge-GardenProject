@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { DatabaseService } from './services/database.service';
 import { HomeComponent } from './home/home.component';
 import { ApiService } from './api.service';
+import {DisplayProductsComponent} from "./display-products/display-products.component"
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { ApiService } from './api.service';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [ HttpClient, ApiService ],
+  providers: [ HttpClient, ApiService, DatabaseService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
