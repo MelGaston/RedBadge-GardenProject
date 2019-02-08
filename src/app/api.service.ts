@@ -4,7 +4,8 @@ import{ HttpClient, HttpHeaders} from "@angular/common/http";
 import {Observable, of} from "rxjs";
 import {catchError, map, tap} from "rxjs/operators";
 
-import{User} from "./user";
+import{ User } from "./user";
+import { Product } from './models/product.model';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -41,5 +42,15 @@ export class ApiService {
       // Let the app keep running by returning an empty result.
       return of(result as T);
     };
+  }
+
+  deleteProduct(product: Product | number): Observable<Product> {
+    const url = `${this.apiURL}/product/${product}`;
+
+    console.log(product);
+
+    return this.http.delete<Product>(url, httpOptions).pipe(
+      catchError(this.handleError<Product>('deleteProduct'))
+    )
   }
 }

@@ -15,6 +15,7 @@ nav {
 .btn {
     background-color: #fef200;
     transition:0.3s;
+    border:none;
 }
 
 .btn:hover {
