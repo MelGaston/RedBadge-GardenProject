@@ -16,6 +16,11 @@ export class AuthComponent implements OnInit {
   constructor(private apiService: ApiService) { }
 
   ngOnInit() {
+    this.setSessionStorage()
+  }
+
+  setSessionStorage(){
+    sessionStorage.setItem("token", "");
   }
 
   viewSwapper() {
@@ -30,9 +35,9 @@ export class AuthComponent implements OnInit {
     userInfo.password = password;
 
     this.apiService.postLogin(userInfo)
-    .subscribe(
-      // user => { this.users.push(user);}
-    )
+    .subscribe(data => {
+      sessionStorage.setItem("token", data.sessionToken)
+    })
     this.viewSwapper();
   }
 

@@ -10,7 +10,7 @@ import { Product } from './models/product.model';
 const httpOptions = {
   headers: new HttpHeaders({
     "Content-Type": "application/json",
-    "Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImF0eWxlckBnbWFpbC5jb20iLCJpYXQiOjE1NDk2NDMxNDgsImV4cCI6MTU0OTcyOTU0OH0.rh5XAfJfSRCuzfLi99JtfiPhbZv7Zbl3e_LwF32PSGQ"
+    "Authorization": sessionStorage.getItem("token")
   })
 }
 @Injectable({
@@ -18,7 +18,7 @@ const httpOptions = {
 })
 export class ApiService {
   private apiURL: string = 'https://efa-gardenapp-backend.herokuapp.com/api';
-  private token: string = "blah";
+  private token = "blah";
   constructor(
     private http: HttpClient) { }
 
@@ -27,8 +27,7 @@ export class ApiService {
     return this.http.post<User>(`${this.apiURL}/auth/login`, userInfo, httpOptions).pipe(
       catchError(this.handleError("postLogin")),
       tap(user => {
-        this.token = user.token;
-        console.log(httpOptions);
+        return user;
       })
     )
   }
